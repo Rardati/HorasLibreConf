@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 
 export class HomePage {
 
-  num: number;
+  num: number = 0;
   numSecret: number = this.numAleatorio(1, 100);
 
   mayorMenor: string = '...';
