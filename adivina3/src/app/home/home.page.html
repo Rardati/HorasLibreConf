@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Adivina el País Secreto
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding">
+    <ion-input type="text" [(ngModel)]="pais" placeholder="Introduce el nombre de un país"></ion-input>
+    <p>{{ pista }}</p>
+
+    <ion-card *ngIf="acierto">
+      <ion-card-header>
+        ¡¡¡ENHORABUENA!!!
+      </ion-card-header>
+      <ion-card-content>
+        Has acertado, el país secreto es {{ pais }}
+      </ion-card-content>
+    </ion-card>
+
+    <ion-button class="boton" expand="block" *ngIf="!acierto" (click)="compruebaPais()">Adivina</ion-button>
+    <ion-button expand="block" *ngIf="acierto" (click)="reiniciar()">Volver a jugar</ion-button>
+  </div>
+</ion-content>
