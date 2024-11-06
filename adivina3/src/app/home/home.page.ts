@@ -18,7 +18,7 @@ export class HomePage {
   paisAleatorio() {
     const paises = [
       { nombre: 'España', continente: 'Europa' },
-      { nombre: 'México', continente: 'América' },
+      { nombre: 'Canadá', continente: 'América' },
       { nombre: 'Japón', continente: 'Asia' },
       { nombre: 'Egipto', continente: 'África' },
       { nombre: 'Australia', continente: 'Oceanía' },
