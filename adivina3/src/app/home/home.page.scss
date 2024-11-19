@@ -76,14 +76,21 @@
 
 
 
+/* Ocultar el botón de orientación horizontal por defecto */
+.boton-landscape {
+  display: none;
+}
+
+/* Ocultar el botón de orientación vertical cuando el dispositivo está en modo horizontal */
+@media (orientation: landscape) {
+  .boton-portrait {
+    display: none;
+  }
+
+  .boton-landscape {
+    display: block;
+  }
+}
 
 
-
-
-
-
-
-
-
-  
 }
